@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-blue-200 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-lg flex flex-col md:flex-row w-full max-w-4xl">
+        <div class="md:w-1/2 p-8">
+            <div class="flex justify-center mb-6">
+                <i class="fas fa-stethoscope text-6xl text-blue-500"></i>
+            </div>
+            <h2 class="text-3xl font-bold text-center mb-6">HealthM Login</h2>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Username</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="example@healthmeditech.com">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onclick="openNewWindow()">
+                       Sign In
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="md:w-1/2">
+            <img alt="Medical professionals working together" class="object-cover w-full h-full rounded-r-lg" src="https://storage.googleapis.com/a1aa/image/dMVsA1e1uD4XSfgJjhQdqkj8A4U-Y7Sy9hbYvuqo4jc.jpg">
+        </div>
+    </div>
+    <script>
+        function openNewWindow() {
+            window.open('https://www.example.com', '_blank');
+        }
+    </script>
+</body>
+</html>
